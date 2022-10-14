@@ -28,20 +28,10 @@
   <Thumbnail {selected} on:download={downloaded} {download} />
 
   <Form on:submit={handleSubmit}>
-    <FormGroup>
-      <Checkbox
-        labelText="Obtener listas del servidor"
-        bind:checked={downloadServerSide}
-      />
-    </FormGroup>
 
-    {#if downloadServerSide}
-      <DownloadForm {selected} />
-    {:else}
-      <InputForm {selected} />
-    {/if}
+    <InputForm {selected} />
     <FormGroup>
-      <Button type="submit">Descargar</Button>
+      <Button type="submit">Download</Button>
     </FormGroup>
   </Form>
 </main>
