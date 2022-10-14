@@ -5,6 +5,6 @@
 </script>
 
 <Tabs bind:selected>
-  <Tab label="Miniatura de vídeo" />
-  <Tab label="Miniatura de serie" />
+  <Tab label="Single Video" />
+  <Tab label="Series Video" />
 </Tabs>
